@@ -1,246 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SanRemo Group — Interim commercial leadership for enterprise IT services</title>
-<meta name="description" content="Interim commercial leadership and large-deal governance for enterprise IT services. The independent practice of Jan Cleeren. Belgium and UAE.">
-<meta property="og:title" content="SanRemo Group">
-<meta property="og:description" content="Interim commercial leadership and large-deal governance for enterprise IT services.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://sanremo-group.com/">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;450;600&family=IBM+Plex+Serif:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --ink:#14202b;
-    --ink-soft:#55646f;
-    --rule:#d5dde3;
-    --rule-soft:#e7ecef;
-    --paper:#ffffff;
-    --band:#f2f5f7;
-    --accent:#b3122d;
-    --measure:34rem;
-  }
-  *{box-sizing:border-box}
-  html{-webkit-text-size-adjust:100%}
-  body{
-    margin:0;
-    background:var(--paper);
-    color:var(--ink);
-    font-family:"IBM Plex Sans",system-ui,sans-serif;
-    font-size:17px;
-    line-height:1.62;
-    font-weight:400;
-    -webkit-font-smoothing:antialiased;
-  }
-  .wrap{max-width:60rem;margin:0 auto;padding:0 1.75rem}
-  a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--rule)}
-  a:hover{border-bottom-color:var(--accent);color:var(--accent)}
-  a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SanRemo Group — Interim commercial leadership for enterprise IT services</title>
+  <meta name="description" content="Interim commercial leadership and large-deal governance for enterprise IT services. The independent practice of Jan Cleeren. Belgium and UAE.">
+  <meta property="og:title" content="SanRemo Group">
+  <meta property="og:description" content="Interim commercial leadership and large-deal governance for enterprise IT services.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sanremo-group.com/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;450;600&family=IBM+Plex+Serif:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --ink:#14202b;
+      --ink-soft:#55646f;
+      --rule:#d5dde3;
+      --rule-soft:#e7ecef;
+      --paper:#ffffff;
+      --band:#f2f5f7;
+      --accent:#b3122d;
+      --measure:34rem;
+    }
+    *{box-sizing:border-box}
+    html{-webkit-text-size-adjust:100%}
+    body{
+      margin:0;
+      background:var(--paper);
+      color:var(--ink);
+      font-family:"IBM Plex Sans",system-ui,sans-serif;
+      font-size:17px;
+      line-height:1.62;
+      font-weight:400;
+      -webkit-font-smoothing:antialiased;
+    }
+    .wrap{max-width:60rem;margin:0 auto;padding:0 1.75rem}
+    a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--rule)}
+    a:hover{border-bottom-color:var(--accent);color:var(--accent)}
+    a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
 
-  /* ---------- masthead ---------- */
-  .masthead{border-bottom:1px solid var(--rule)}
-  .masthead .wrap{
-    display:flex;align-items:baseline;justify-content:space-between;
-    gap:1.5rem;padding-top:1.6rem;padding-bottom:1.3rem;
-  }
-  .mark{font-family:"IBM Plex Serif",Georgia,serif;font-weight:600;font-size:1.45rem;letter-spacing:-.015em;border:0}
-  .mark span{color:var(--accent)}
-  .mark small{display:block;font-family:"IBM Plex Sans",sans-serif;font-weight:450;font-size:.72rem;letter-spacing:.11em;color:var(--ink-soft);margin-top:.15rem}
-  .masthead nav{font-size:.93rem;color:var(--ink-soft)}
-  .masthead nav a{border:0;color:var(--ink-soft)}
+    /* ---------- masthead ---------- */
+    .masthead{border-bottom:1px solid var(--rule)}
+    .masthead .wrap{
+      display:flex;align-items:baseline;justify-content:space-between;
+      gap:1.5rem;padding-top:1.6rem;padding-bottom:1.3rem;
+    }
+    .mark{font-family:"IBM Plex Serif",Georgia,serif;font-weight:600;font-size:1.45rem;letter-spacing:-.015em;border:0}
+    .mark span{color:var(--accent)}
+    .mark small{display:block;font-family:"IBM Plex Sans",sans-serif;font-weight:450;font-size:.72rem;letter-spacing:.11em;color:var(--ink-soft);margin-top:.15rem}
+    .masthead nav{font-size:.93rem;color:var(--ink-soft)}
+    .masthead nav a{border:0;color:var(--ink-soft)}
 
-  /* ---------- hero ---------- */
-  .hero{padding:5.5rem 0 4.25rem}
-  .hero h1{
-    font-family:"IBM Plex Serif",Georgia,serif;
-    font-weight:500;
-    font-size:clamp(2.15rem,5.2vw,3.35rem);
-    line-height:1.14;
-    letter-spacing:-.022em;
-    margin:0 0 1.9rem;
-    max-width:20ch;
-  }
-  .hero p{max-width:var(--measure);margin:0 0 1.05rem;color:var(--ink-soft)}
-  .hero p.lead{color:var(--ink);font-size:1.1rem}
+    /* ---------- hero ---------- */
+    .hero{padding:5.5rem 0 4.25rem}
+    .hero h1{
+      font-family:"IBM Plex Serif",Georgia,serif;
+      font-weight:500;
+      font-size:clamp(2.15rem,5.2vw,3.35rem);
+      line-height:1.14;
+      letter-spacing:-.022em;
+      margin:0 0 1.9rem;
+      max-width:20ch;
+    }
+    .hero p{max-width:var(--measure);margin:0 0 1.05rem;color:var(--ink-soft)}
+    .hero p.lead{color:var(--ink);font-size:1.1rem}
 
-  /* ---------- shared two-column rows ---------- */
-  section{border-top:1px solid var(--rule)}
-  .section-head{padding:2.75rem 0 .25rem}
-  .section-head h2{
-    font-size:.95rem;font-weight:600;margin:0;letter-spacing:.01em;color:var(--accent);
-  }
-  .row{
-    display:grid;
-    grid-template-columns:15rem 1fr;
-    gap:2.5rem;
-    padding:2.25rem 0;
-    border-top:1px solid var(--rule-soft);
-  }
-  .row:first-of-type{border-top:0}
-  .row h3{
-    font-family:"IBM Plex Serif",Georgia,serif;
-    font-size:1.3rem;font-weight:500;line-height:1.25;letter-spacing:-.012em;
-    margin:0;
-  }
-  .row .meta{font-size:.88rem;color:var(--ink-soft);margin-top:.5rem}
-  .row p{margin:0 0 .9rem;max-width:var(--measure)}
-  .row p:last-child{margin-bottom:0}
-  .row .detail{font-size:.93rem;color:var(--ink-soft)}
+    /* ---------- shared two-column rows ---------- */
+    section{border-top:1px solid var(--rule)}
+    .section-head{padding:2.75rem 0 .25rem}
+    .section-head h2{
+      font-size:.95rem;font-weight:600;margin:0;letter-spacing:.01em;color:var(--accent);
+    }
+    .row{
+      display:grid;
+      grid-template-columns:15rem 1fr;
+      gap:2.5rem;
+      padding:2.25rem 0;
+      border-top:1px solid var(--rule-soft);
+    }
+    .row:first-of-type{border-top:0}
+    .row h3{
+      font-family:"IBM Plex Serif",Georgia,serif;
+      font-size:1.3rem;font-weight:500;line-height:1.25;letter-spacing:-.012em;
+      margin:0;
+    }
+    .row .meta{font-size:.88rem;color:var(--ink-soft);margin-top:.5rem}
+    .row p{margin:0 0 .9rem;max-width:var(--measure)}
+    .row p:last-child{margin-bottom:0}
+    .row .detail{font-size:.93rem;color:var(--ink-soft)}
 
-  /* ---------- record ---------- */
-  .record{background:var(--band)}
-  .record dl{margin:0;padding:1.25rem 0 3rem}
-  .record .item{
-    display:grid;grid-template-columns:9rem 1fr;gap:2rem;
-    padding:1.05rem 0;border-top:1px solid var(--rule);
-    align-items:baseline;
-  }
-  .record dt{
-    font-family:"IBM Plex Serif",Georgia,serif;
-    font-size:1.22rem;font-weight:600;letter-spacing:-.01em;
-  }
-  .record dd{margin:0;max-width:var(--measure)}
-  .record dd .where{display:block;font-size:.87rem;color:var(--ink-soft);margin-top:.2rem}
+    /* ---------- record ---------- */
+    .record{background:var(--band)}
+    .record dl{margin:0;padding:1.25rem 0 3rem}
+    .record .item{
+      display:grid;grid-template-columns:9rem 1fr;gap:2rem;
+      padding:1.05rem 0;border-top:1px solid var(--rule);
+      align-items:baseline;
+    }
+    .record dt{
+      font-family:"IBM Plex Serif",Georgia,serif;
+      font-size:1.22rem;font-weight:600;letter-spacing:-.01em;
+    }
+    .record dd{margin:0;max-width:var(--measure)}
+    .record dd .where{display:block;font-size:.87rem;color:var(--ink-soft);margin-top:.2rem}
 
-  /* ---------- about + contact ---------- */
-  .about .row p{max-width:var(--measure)}
-  .contact{padding:3rem 0 4rem}
-  .contact .lines{display:grid;gap:.55rem;font-size:1.05rem;margin-top:1.25rem}
-  .contact .lines span{color:var(--ink-soft);font-size:.93rem;display:block}
-  footer{border-top:1px solid var(--rule);font-size:.85rem;color:var(--ink-soft)}
-  footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding:1.4rem 0}
+    /* ---------- about + contact ---------- */
+    .about .row p{max-width:var(--measure)}
+    .contact{padding:3rem 0 4rem}
+    .contact .lines{display:grid;gap:.55rem;font-size:1.05rem;margin-top:1.25rem}
+    .contact .lines span{color:var(--ink-soft);font-size:.93rem;display:block}
+    footer{border-top:1px solid var(--rule);font-size:.85rem;color:var(--ink-soft)}
+    footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding:1.4rem 0}
 
-  @media (max-width:46rem){
-    body{font-size:16px}
-    .hero{padding:3.5rem 0 2.75rem}
-    .row,.record .item{grid-template-columns:1fr;gap:.9rem}
-    .row{padding:1.85rem 0}
-    .masthead .wrap{flex-direction:column;align-items:flex-start;gap:.6rem}
-  }
-</style>
-</head>
-<body>
+    @media (max-width:46rem){
+      body{font-size:16px}
+      .hero{padding:3.5rem 0 2.75rem}
+      .row,.record .item{grid-template-columns:1fr;gap:.9rem}
+      .row{padding:1.85rem 0}
+      .masthead .wrap{flex-direction:column;align-items:flex-start;gap:.6rem}
+    }
+    </style>
+  </head>
+  <body>
 
-<header class="masthead">
-  <div class="wrap">
-    <a class="mark" href="/">sr<span>g</span><small>SanRemo Group</small></a>
-    <nav><a href="#contact">jan.cleeren@sanremo-group.com</a></nav>
-  </div>
-</header>
+    <header class="masthead">
+      <div class="wrap">
+        <a class="mark" href="/">sr<span>g</span><small>SanRemo Group</small></a>a>
+      <nav><a href="#contact">jan.cleeren@sanremo-group.com</a>a></nav>
+      </div>div>
+    </header>header>
+  
+  <main>
 
-<main>
-
-  <div class="wrap hero">
-    <h1>Interim commercial leadership for enterprise IT services.</h1>
-    <p class="lead">SanRemo Group is the independent practice of Jan Cleeren. I take scoped mandates — usually six to twelve months — with organisations that need a commercial engine built, rebuilt or refocused.</p>
+    <div class="wrap hero">
+      <h1>Interim commercial leadership for enterprise IT services.</h1>
+    <p class="lead">SanRemo Group is the independent practice of Jan Cleeren. I take scoped mandates — usually six to twelve months — with organisations that need a commercial engine built, rebuilt or refocused.</p>p>
     <p>Twenty-five years in enterprise IT services, most of it in the Belgian market and the Gulf, in senior commercial roles at IBM, Hewlett-Packard and EDS. I work at board and executive level, to a defined brief, with a defined handover.</p>
-  </div>
-
+    </div>div>
+  
   <section>
     <div class="wrap">
-      <div class="section-head"><h2>What I do</h2></div>
+      <div class="section-head"><h2>What I do</h2></div>div>
 
       <div class="row">
         <div>
           <h3>Sales organisation design</h3>
-          <p class="meta">Three to six months</p>
+          <p class="meta">Three to six months</p>p>
         </div>
         <div>
           <p>The portfolio and the sales motion have drifted apart: the team is selling the way it sold five years ago, into a market that has moved. Growth stalls and nobody can say precisely where.</p>
-          <p>I assess the portfolio against market segment and sales motion, match it against what the team can actually do, and realign the organisation around where it can win — separating business development from presales where that is the constraint.</p>
-          <p class="detail">Assessment, target operating model, role definitions, KPIs, and the transition run with you rather than handed over as a report.</p>
+        <p>I assess the portfolio against market segment and sales motion, match it against what the team can actually do, and realign the organisation around where it can win.</p>
+        <p class="detail">Assessment, target operating model, role definitions, KPIs, and the transition run with you rather than handed over as a report.</p>
         </div>
       </div>
-
-      <div class="row">
-        <div>
-          <h3>Large-deal pursuit governance</h3>
-          <p class="meta">Six to twelve months, or per pursuit</p>
-        </div>
-        <div>
-          <p>Big deals are lost long before the bid. They are lost by qualifying in late, by shaping nothing, by discovering the price-to-win in the final week, and by governance that reviews slides instead of decisions.</p>
-          <p>I install a pursuit framework that starts before the RFP: qualification gates, a scorecard that bites, decision-unit mapping, price-to-win, win strategy and a close plan — and I chair it until your own people can.</p>
-          <p class="detail">Gate structure, scorecard, pursuit templates, two-layer governance, and the team trained to run it without me.</p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div>
-          <h3>Commercial due diligence</h3>
-          <p class="meta">Four to eight weeks</p>
-        </div>
-        <div>
-          <p>The growth plan says one thing. The sales engine underneath it may say another. Before an acquisition or an investment, someone has to test whether the commercial machine can deliver the number in the model.</p>
-          <p>An operator's challenge of the plan: sales-engine maturity, pipeline quality, portfolio maturity, organisation and leadership, delivery against ambition — and what a stronger owner could unlock.</p>
-          <p class="detail">For corporate development, transaction services teams and investors in IT services and software.</p>
-        </div>
-      </div>
+    
+    <div class="row">
+    <div>
+    <h3>Large-deal pursuit governance</h3>
+    <p class="meta">Six to twelve months, or per pursuit</p>
+    </div>
+    <div>
+    <p>Big deals are lost long before the bid. They are lost by qualifying in late, by shaping nothing, by discovering the price-to-win in the final week, and by governance that reviews slides instead of decisions.</p>
+    <p>I install a pursuit framework that starts before the RFP: qualification gates, a scorecard that bites, decision-unit mapping, price-to-win, win strategy and a close plan — and I chair it until your own people can.</p>
+    <p class="detail">Gate structure, scorecard, pursuit templates, two-layer governance, and the team trained to run it without me.</p>
+    </div>
+    </div>
+    
+    <div class="row">
+    <div>
+    <h3>Sales governance and method</h3>
+    <p class="meta">Three to six months</p>
+    </div>
+    <div>
+    <p>Most companies do not lack sales activity; they lack a way to tell which of it matters. Deals get qualified on confidence, forecasts on hope — and governance is either absent or so heavy the team works around it.</p>
+    <p>I assess how the company actually sells, then design and implement a sales governance framework fit for purpose: qualification standards, deal stages with evidence-based exits, an operating cadence and CRM discipline — sized to the sales motions in place or still to be implemented, never process for its own sake.</p>
+    <p class="detail">The method is documented as your intellectual property, and within ninety days the cadence runs by your own people.</p>
+    </div>
+    </div>
+    
+    <div class="row">
+    <div>
+    <h3>Commercial due diligence</h3>
+    <p class="meta">Four to eight weeks</p>
+    </div>
+    <div>
+    <p>The growth plan says one thing. The sales engine underneath it may say another. Before an acquisition or an investment, someone has to test whether the commercial machine can deliver the number in the model.</p>
+    <p>An operator's challenge of the plan: sales-engine maturity, pipeline quality, portfolio maturity, organisation and leadership, delivery against ambition — and what a stronger owner could unlock.</p>
+    <p class="detail">For corporate development, transaction services teams and investors in IT services and software.</p>
+    </div>
+    </div>
     </div>
   </section>
-
+  
   <section class="record">
-    <div class="wrap">
-      <div class="section-head"><h2>What this is built on</h2></div>
-      <dl>
-        <div class="item">
-          <dt>$600M</dt>
-          <dd>Global cloud transformation programme, converted from a three-year extension into a seven-year partnership.<span class="where">Hewlett-Packard</span></dd>
-        </div>
-        <div class="item">
-          <dt>$500M</dt>
-          <dd>Government outsourcing renewal won against Atos and IBM, directing a pursuit team of more than fifty.<span class="where">Hewlett-Packard</span></dd>
-        </div>
-        <div class="item">
-          <dt>$150M</dt>
-          <dd>Digital infrastructure and cloud programmes across the UAE, Qatar, Saudi Arabia and South Africa.<span class="where">IBM Middle East &amp; Africa</span></dd>
-        </div>
-        <div class="item">
-          <dt>$120M</dt>
-          <dd>A government and defence sector built from nothing in three years, including a payroll and HR contract across thirteen ministries.<span class="where">EDS Belgium</span></dd>
-        </div>
-        <div class="item">
-          <dt>€100M</dt>
-          <dd>Pursuit governance for an IT services engagement, across sales, solution, finance and delivery.<span class="where">Econocom</span></dd>
-        </div>
-      </dl>
-    </div>
-  </section>
-
-  <section class="about">
-    <div class="wrap">
-      <div class="section-head"><h2>How I work</h2></div>
-      <div class="row">
-        <div><h3>A brief, not a retainer</h3></div>
-        <div>
-          <p>Every mandate starts with what has to be true at the end of it, and ends with a handover — a framework your people run, a team that knows its job, a decision made. I am not building a consultancy and I do not sell projects that extend themselves.</p>
-          <p>I work in Dutch, French, English and German, from Belgium and the UAE, and I am comfortable saying early that a brief is not a fit.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="wrap contact">
-      <div class="section-head"><h2>Contact</h2></div>
-      <div class="lines">
-        <a href="mailto:jan.cleeren@sanremo-group.com">jan.cleeren@sanremo-group.com</a>
-        <a href="https://www.linkedin.com/in/jancleeren">linkedin.com/in/jancleeren</a>
-        <span>Brussels &amp; Dubai</span>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<footer>
   <div class="wrap">
-    <span>SanRemo Group — the independent practice of Jan Cleeren</span>
-    <span>&copy; 2026</span>
+  <div class="section-head"><h2>What this is built on</h2></div>
+  <dl>
+    <div class="item">
+      <dt>$600M</dt>
+    <dd>Global cloud transformation programme, converted from a three-year extension into a seven-year partnership.<span class="where">Hewlett-Packard</span></dd>
+    </div>
+  <div class="item">
+  <dt>$500M</dt>
+  <dd>Government outsourcing renewal won against Atos and IBM, directing a pursuit team of more than fifty.<span class="where">Hewlett-Packard</span>span></dd>
   </div>
-</footer>
+  <div class="item">
+  <dt>$150M</dt>
+  <dd>Digital infrastructure and cloud programmes across the UAE, Qatar, Saudi Arabia and South Africa.<span class="where">IBM Middle East &amp; Africa</span>span></dd>
+  </div>
+  <div class="item">
+  <dt>$120M</dt>
+  <dd>A government and defence sector built from nothing in three years, including a payroll and HR contract across thirteen ministries.<span class="where">EDS Belgium</span>span></dd>
+  </div>
+  <div class="item">
+  <dt>€100M</dt>
+  <dd>Pursuit governance for an IT services engagement, across sales, solution, finance and delivery.<span class="where">Econocom</span>span></dd>
+  </div>
+  </dl>
+  </div>
+  </section>
+  
+  <section class="about">
+  <div class="wrap">
+  <div class="section-head"><h2>How I work</h2></div>
+  <div class="row">
+  <div><h3>A brief, not a retainer</h3></div>
+  <div>
+  <p>Every mandate starts with what has to be true at the end of it, and ends with a handover — a framework your people run, a team that knows its job, a decision made. I am not building a consultancy and I do not sell projects that extend themselves.</p>
+  <p>I work in Dutch, French, English and German, from Belgium and the UAE, and I am comfortable saying early that a brief is not a fit.</p>
+  </div>
+  </div>
+  </div>
+  </section>
+  
+  <section id="contact">
+  <div class="wrap contact">
+  <div class="section-head"><h2>Contact</h2></div>
+  <div class="lines">
+  <a href="mailto:jan.cleeren@sanremo-group.com">jan.cleeren@sanremo-group.com</a>a>
+  <a href="https://www.linkedin.com/in/jancleeren">linkedin.com/in/jancleeren</a>a>
+  <span>Brussels &amp; Dubai</span>
+  </div>
+  </div>
+  </section>
+  
+  </main>
+  
+  <footer>
+    <div class="wrap">
+      <span>SanRemo Group — the independent practice of Jan Cleeren</span>
+      <span>&copy; 2026</span>
+    </div>
+  </footer>
 
-</body>
-</html>
+  </body>
+</html>html>
+  </footer></span></p></p></dd></dd></dt>
+  </dl></p></p></h3></h3></p></p>
+        </div>
+        </div>
+  </section></p></h1>
+  </main></nav></small></span>
+  </body>
+  </style></title>
+  </head>
