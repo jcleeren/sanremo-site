@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solution Sales Isn’t Dead. It’s Just Not Enough. — SanRemo Group</title>
+<meta name="description" content="A SanRemo Group white paper by Jan Cleeren on fifty years of B2B technology selling, and why how leaders steer major deals now decides who wins them.">
+<meta name="author" content="Jan Cleeren">
+<meta property="og:title" content="Solution Sales Isn’t Dead. It’s Just Not Enough.">
+<meta property="og:description" content="Seller skill no longer wins major deals on its own. A SanRemo Group white paper by Jan Cleeren.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sanremo-group.com/insights/solution-sales-isnt-dead/">
+<meta property="og:image" content="https://sanremo-group.com/insights/solution-sales-isnt-dead/five-questions.png">
+<link rel="canonical" href="https://sanremo-group.com/insights/solution-sales-isnt-dead/">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;450;600&family=IBM+Plex+Serif:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+--ink:#14202b;
+--ink-soft:#55646f;
+--rule:#d5dde3;
+--rule-soft:#e7ecef;
+--paper:#ffffff;
+--band:#f2f5f7;
+--accent:#b3122d;
+--measure:34rem;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+margin:0;
+background:var(--paper);
+color:var(--ink);
+font-family:"IBM Plex Sans",system-ui,sans-serif;
+font-size:17px;
+line-height:1.62;
+font-weight:400;
+-webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:60rem;margin:0 auto;padding:0 1.75rem}
+a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--rule)}
+a:hover{border-bottom-color:var(--accent);color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+
+/* ---------- masthead ---------- */
+.masthead{border-bottom:1px solid var(--rule)}
+.masthead .wrap{
+display:flex;align-items:center;justify-content:space-between;
+gap:1.5rem;padding-top:1.6rem;padding-bottom:1.3rem;
+}
+.mark{font-family:"IBM Plex Serif",Georgia,serif;font-weight:600;font-size:1.45rem;letter-spacing:-.015em;border:0}
+.mark img{display:block;height:3.1rem;width:auto}
+.masthead nav{font-size:.93rem;color:var(--ink-soft);display:flex;gap:1.4rem;flex-wrap:wrap}
+.masthead nav a{border:0;color:var(--ink-soft)}
+
+/* ---------- hero ---------- */
+.hero{padding-top:5.5rem;padding-bottom:4.25rem}
+.hero h1{
+font-family:"IBM Plex Serif",Georgia,serif;
+font-weight:500;
+font-size:clamp(2.15rem,5.2vw,3.35rem);
+line-height:1.14;
+letter-spacing:-.022em;
+margin:0 0 1.9rem;
+max-width:20ch;
+}
+.hero p{max-width:var(--measure);margin:0 0 1.05rem;color:var(--ink-soft)}
+.hero p.lead{color:var(--ink);font-size:1.1rem}
+
+/* ---------- shared two-column rows ---------- */
+section{border-top:1px solid var(--rule)}
+.section-head{padding:2.75rem 0 .25rem}
+.section-head h2{
+font-size:.95rem;font-weight:600;margin:0;letter-spacing:.01em;color:var(--accent);
+}
+.row{
+display:grid;
+grid-template-columns:15rem 1fr;
+gap:2.5rem;
+padding:2.25rem 0;
+border-top:1px solid var(--rule-soft);
+}
+.row:first-of-type{border-top:0}
+.row h3{
+font-family:"IBM Plex Serif",Georgia,serif;
+font-size:1.3rem;font-weight:500;line-height:1.25;letter-spacing:-.012em;
+margin:0;
+}
+.row .meta{font-size:.88rem;color:var(--ink-soft);margin-top:.5rem}
+.row p{margin:0 0 .9rem;max-width:var(--measure)}
+.row p:last-child{margin-bottom:0}
+.row .detail{font-size:.93rem;color:var(--ink-soft)}
+
+/* ---------- record ---------- */
+.record{background:var(--band)}
+.record dl{margin:0;padding:1.25rem 0 3rem}
+.record .item{
+display:grid;grid-template-columns:9rem 1fr;gap:2rem;
+padding:1.05rem 0;border-top:1px solid var(--rule);
+align-items:baseline;
+}
+.record dt{
+font-family:"IBM Plex Serif",Georgia,serif;
+font-size:1.22rem;font-weight:600;letter-spacing:-.01em;
+}
+.record dd{margin:0;max-width:var(--measure)}
+.record dd .where{display:block;font-size:.87rem;color:var(--ink-soft);margin-top:.2rem}
+
+/* ---------- about + contact ---------- */
+.about .row p{max-width:var(--measure)}
+.contact{padding-top:3rem;padding-bottom:4rem}
+.contact .lines{display:grid;gap:.55rem;font-size:1.05rem;margin-top:1.25rem}
+.contact .lines span{color:var(--ink-soft);font-size:.93rem;display:block}
+footer{border-top:1px solid var(--rule);font-size:.85rem;color:var(--ink-soft)}
+footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding-top:1.4rem;padding-bottom:1.4rem}
+
+/* ---------- article ---------- */
+.masthead nav{display:flex;gap:1.4rem}
+.article-head{padding-top:4.5rem;padding-bottom:2.5rem;border-bottom:1px solid var(--rule)}
+.kicker{font-size:.95rem;font-weight:600;letter-spacing:.01em;color:var(--accent);margin:0 0 1rem}
+.article-head h1{font-family:"IBM Plex Serif",Georgia,serif;font-weight:500;font-size:clamp(2.15rem,5.2vw,3.2rem);line-height:1.14;letter-spacing:-.022em;margin:0 0 1.2rem;max-width:20ch}
+.article-head .dek{font-size:1.15rem;color:var(--ink);max-width:var(--measure);margin:0 0 1.4rem}
+.byline{font-size:.9rem;color:var(--ink-soft);margin:0}
+.byline a{color:var(--ink-soft)}
+article{padding:1rem 0 3.5rem}
+article .body{max-width:38rem}
+article h2{font-family:"IBM Plex Serif",Georgia,serif;font-size:1.5rem;font-weight:500;line-height:1.25;letter-spacing:-.012em;margin:2.75rem 0 1rem}
+article p{margin:0 0 1.05rem}
+article strong{font-weight:600}
+figure.diagram{margin:1.8rem 0 2rem;padding:1rem;border:1px solid var(--rule-soft);background:#fff}
+figure.diagram img{display:block;width:100%;height:auto}
+.tablewrap{overflow-x:auto;margin:1.4rem 0 1.6rem}
+table{border-collapse:collapse;width:100%;min-width:34rem;font-size:.93rem;line-height:1.45}
+th,td{text-align:left;vertical-align:top;padding:.7rem .8rem;border-top:1px solid var(--rule)}
+th{font-weight:600;background:var(--band);border-top:0}
+td:first-child{font-weight:450}
+h2.sources{font-family:"IBM Plex Sans",sans-serif;font-size:.95rem;font-weight:600;color:var(--accent);letter-spacing:.01em;margin-top:3rem}
+h2.sources + ul{font-size:.88rem;color:var(--ink-soft);list-style:none;padding:0;margin:0}
+h2.sources + ul li{padding:.45rem 0;border-top:1px solid var(--rule-soft);overflow-wrap:anywhere}
+.download{display:flex;gap:1rem;align-items:center;flex-wrap:wrap;margin:2.5rem 0 0;padding:1.4rem 0 0;border-top:1px solid var(--rule)}
+.download a{font-weight:600}
+.download span{font-size:.9rem;color:var(--ink-soft)}
+
+@media (max-width:46rem){
+.article-head{padding-top:3rem;padding-bottom:2rem}
+figure.diagram{padding:.5rem}
+table{min-width:0}
+thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+table,tbody,tr,td{display:block}
+tr{border-top:1px solid var(--rule);padding:.6rem 0}
+td{border:0;padding:.3rem 0}
+td::before{content:attr(data-label);display:block;font-size:.78rem;font-weight:600;color:var(--ink-soft);letter-spacing:.02em}
+td:first-child{font-weight:600}
+body{font-size:16px}
+.hero{padding-top:3.5rem;padding-bottom:2.75rem}
+.row,.record .item{grid-template-columns:1fr;gap:.9rem}
+.row{padding:1.85rem 0}
+.masthead .wrap{flex-direction:column;align-items:flex-start;gap:.6rem}
+}
+</style>
+</head>
+<body>
+
+<header class="masthead">
+<div class="wrap">
+<a class="mark" href="/"><img src="/assets/srg-logo.png" alt="SanRemo Group" width="596" height="235"></a>
+<nav><a href="/#insights">Insights</a><a href="/#contact">jan.cleeren@sanremo-group.com</a></nav>
+</div>
+</header>
+
+<main>
+<div class="wrap article-head">
+<p class="kicker">White paper · The Evolution of Selling</p>
+<h1>Solution Sales Isn’t Dead. It’s Just Not Enough.</h1>
+<p class="dek">Seller skill no longer wins major deals on its own.</p>
+<p class="byline">Jan Cleeren · November 2026 · <a href="SRG_Solution_Sales_Isnt_Dead.pdf">Download PDF</a></p>
+</div>
+
+<div class="wrap">
+<article>
+<div class="body">
+<h2>Executive summary</h2>
+<p>In IT services, seller skill is no longer enough to win major deals. The binding constraint is whether management can see and steer the client's decision while it is still being formed. Most firms cannot.</p>
+<p>Fifty years of method have each added a question the seller must be able to answer, from "what does the product do?" to "how will this client decide, and who must agree?" The skills are well documented and widely trained. Yet buyers now do most of the work without suppliers, increasingly with AI, and often with a hyperscaler or sourcing adviser shaping the decision first. Deals are lost less to competitors than to indecision, and AI is changing the size and the pricing of the deals themselves.</p>
+<p>None of that is fixed by training alone. It is fixed by how leaders steer their major deals: choosing early which deals to shape, reviewing them at a few decisive moments, and judging progress by what the client has done rather than what the seller has said. This paper sets out why, what that looks like in practice, and six questions a sales leader can use to test their own organisation.</p>
+<h2>Fifty years in five questions</h2>
+<p>Each era of selling added a question without retiring the previous one, and the eras overlapped more than any timeline suggests. What changed each time was where the decisive conversation took place.</p>
+<figure class="diagram"><img src="five-questions.png" width="1520" height="888" alt="Five phases of selling, each adding a question the seller must be able to answer: 1 Features and functions, what does the product do; 2 Solution selling, what problem does it solve for this client; 3 Value selling, what is it worth to this client's business; 4 Insight and Challenger, what should this client be thinking about; 5 Orchestrating the decision, how will this client decide, and who must agree."></figure>
+<p><strong>1. Features and functions (1970s to mid-1980s).</strong> In the mainframe and minicomputer era the vendor held the knowledge, so the product was the pitch. The buyer was usually the data-processing department, the criteria were technical, and the seller's job was to explain capacity, speed, price-performance and roadmap better than the next vendor. Relationships mattered, but they sat on top of a technical argument the seller controlled.</p>
+<p><em>Where it broke:</em> as platforms converged and systems became networked, feature differences narrowed and the real question moved up the organisation. A feature pitch increasingly reached the wrong person with the wrong argument.</p>
+<p><strong>2. Solution selling (mid-1980s onwards).</strong> The seller became a diagnostician: find the client's pain, then build the answer around it. Neil Rackham's <em>SPIN Selling</em> (1988), built on research into more than 35,000 sales calls, gave it a question discipline, and Miller and Heiman's <em>Strategic Selling</em> (1985) mapped every deal onto four buying influences: economic, user, technical and coach. In IT this was the era of client-server, ERP and outsourcing, when firms such as EDS and IBM sold multi-year transformation rather than boxes.</p>
+<p><em>Where it broke:</em> solution selling assumed the client knew its problem but not how to solve it. Once buyers could research options, benchmark prices and define the solution themselves, the discovery-led seller arrived late and asked questions the client had already answered.</p>
+<p><strong>3. Value selling (1990s and 2000s).</strong> IT spend came under the CFO's eye and the argument had to be financial: business cases, ROI and total-cost-of-ownership models tied to outcomes the client's finance function would accept. Procurement professionalised at the same time. Large services deals were benchmarked, sourcing advisers entered the room, and contracts began to carry outcome and service-level commitments rather than effort alone.</p>
+<p><em>Where it broke:</em> value selling was right about the language but wrong about who authored it. A vendor-built ROI case is discounted by a sceptical buyer, competing value claims look alike, and a well-run procurement process converts "value" back into a price comparison.</p>
+<p><strong>4. Insight and Challenger selling (2010s).</strong> The seller moved from answering the client's question to changing it. <em>The Challenger Sale</em> (2011), built on CEB research across more than 6,000 reps, found that top performers teach, tailor and take control. HBR's 2012 article <em>The End of Solution Sales</em> took the argument to the buyer's side. In a CEB study of more than 1,400 customers, buyers had completed nearly 60% of a purchase decision before talking to a supplier. Its answer was "insight selling": target clients in flux, seek out Mobilizers (go-getters, teachers and sceptics) rather than friendly Talkers (guides, friends and climbers), and coach customers on how to buy. HBR was clear that star reps were "still selling solutions—but more broadly, they're selling insights", and RAIN Group's study of more than 700 purchases agrees that selling has changed but solution selling is evolving, not dead.</p>
+<p><em>Where it broke:</em> insight became content that most suppliers now produce, and one seller with one sharp idea still loses when the client's buying group cannot agree. HBR's second and third strategies already pointed at that gap, and its authors took it up in <em>The Challenger Customer</em> (2015).</p>
+<p><strong>5. Orchestrating the buying decision (now).</strong> The seller helps a buying group reach a decision it would otherwise not reach, mostly through the people and material inside the client rather than through the seller's own meetings.</p>
+<p>Neither stakeholder mapping nor coaching the buyer is new: the first is forty years old, and HBR argued for the second in 2012. What is new is the environment in which it has to work, which is the subject of the next section.</p>
+<h2>What is genuinely new in 2026</h2>
+<p>Five shifts change where, when and on what terms a deal is shaped. Four move influence further from the seller's meetings; the fifth changes the economics of the deal itself.</p>
+<p><strong>The buyer works with AI before it works with you.</strong> In Gartner's survey of 646 B2B buyers (fieldwork August–September 2025), 45% had used AI during a recent purchase and 67% said they prefer a rep-free experience. Forrester's 2025 buyer survey found generative AI the single most cited way of researching a purchase, with buyers then checking what it told them against peers, analysts and providers: 36% said it left them better informed, 20% less confident after unreliable output. A supplier's influence therefore has to be in place before the buyer starts asking, in public proof, in clear points of view and in what peers and advisers say, because that is what the buyer uses to check the machine.</p>
+<p><strong>The buyer wants to self-serve, but not on everything.</strong> This is the apparent contradiction: how do you orchestrate a decision the buyer would rather make without you? Gartner's own data resolve it, and they cut against the seller's instinct. In a 2021 Gartner survey of 725 buyers, 65% of those who navigated the purchase themselves completed a high-quality deal, against 24% of those led by a sales rep. Buyers prefer digital channels for general information and turn to sellers for tasks that need context, such as whether a solution fits their organisation. The job is therefore not to put the seller back in the middle but to equip the buyer: frame the problem, test fit, and give the client's own Mobilizer the material to carry the buying group to agreement.</p>
+<p><strong>The decision is framed inside an ecosystem.</strong> Forrester puts the average purchase at 13 internal stakeholders and nine external participants, and finds that purchases involving generative AI roughly double the group; procurement is arriving earlier, with 53% of buyers naming it a decision-maker. In cloud, data and AI deals, the hyperscaler is often in the account before any services firm. Its account team knows the client's plans, recommends partners through co-sell and funds migrations: AWS's Migration Acceleration Program, running since 2016, pays partners to offset clients' migration costs. Marketplaces matter mostly for software, though AWS now lists managed and professional services as well. On large outsourcing deals, a sourcing adviser often runs the process; HBR flagged third-party purchasing consultants in 2012, and they are now a common feature of such deals. All of these are stakeholders to be mapped, not background.</p>
+<p><strong>Sovereignty has become a decision criterion.</strong> Sovereignty has become a decision criterion, but data residency is not what it turns on. The AWS European Sovereign Cloud went live on 14 January 2026 in Brandenburg, operated by EU entities under German law, with €7.8 billion committed and sovereign Local Zones planned for Belgium, the Netherlands and Portugal. Yet sovereignty is about control and jurisdiction: who operates the platform, who holds the keys, whose law can compel access. Under the US CLOUD Act, a US provider can be compelled to disclose data in its possession, custody or control wherever it is stored, so a US hyperscaler cannot be sovereign by definition, whatever the structure of its European entity; it can narrow the exposure, not remove it. For public-sector and regulated clients this is now a gate, and it pulls legal, compliance and the CISO into the buying group. Anyone who sold cloud in the Gulf, where data residency was a gate years earlier, will recognise the pattern.</p>
+<p><strong>AI has changed the economics on the supplier's side too.</strong> ISG reports that providers now price managed services deals on the assumption that AI will cut cost and headcount, some bringing those savings forward through financial engineering, while neither side has full visibility of how the savings will be achieved. In the first half of 2026 managed services ACV grew 2.7% while infrastructure-as-a-service grew 66%. The market is splitting: in EMEA in the second quarter of 2026, contract numbers rose 23% but only two deals exceeded $100 million a year, with mega-deal value down 56% and $5–9 million deals up 11%. Clients consolidate through large cost-takeout deals and buy AI, cyber and engineering from smaller specialists. Two consequences follow. The price-to-win now carries a productivity assumption nobody can fully verify, and how much of it to bet is a leadership decision. And while AI lowers the cost of producing a proposal, it does not lower the judgement of which deal to shape, when, and at what price; the discipline that won nine-figure pursuits now has to work on seven-figure deals, with far less machinery.</p>
+<h2>Why seller skill alone no longer decides the deal</h2>
+<p>Seller skill decides the quality of each conversation. Leadership decides which deals are worth shaping, how early the firm engages, which people it commits and when it walks away. In most IT services firms the first is trained repeatedly; the second is left to the forecast meeting. HBR's 2012 prescription had two halves, sellers who sell differently and management that supports them differently. This paper is about the second.</p>
+<p><strong>The biggest loss is to indecision, and that is not a skills problem.</strong> Dixon and McKenna's analysis of more than 2.5 million recorded sales conversations found that 40% to 60% of deals are lost to customers who said they intended to buy and then did nothing. The study spans transactional and complex sales, so the figure is not specific to large IT deals, but the pattern is familiar to anyone who has run them. A stalled buying group is rarely a disagreement with your proposal. It is people on the client side who cannot agree, or who fear owning the risk. Your seller cannot fix that alone. It takes your executives talking to theirs as peers, as soon as the stall shows, and commitments only management can make: a phased start, guaranteed service levels during transition, a clear exit route.</p>
+<p><strong>The forecast meeting looks at the wrong thing.</strong> Most pipeline reviews track the seller's stage and the deal's value. They rarely ask what the client has actually done, and a review that asks only "who is our coach?" pushes sellers toward the contacts HBR calls Talkers: accessible and generous with information, but poor at building the consensus a complex purchase needs. HBR described how ADP rebuilt its sales process around the customer's buying steps and added "verifiers": objective evidence of the client's progress, such as a written commitment to run a pre-sales diagnostic. The same test applies to people: HBR's star performers never treated a contact as a Mobilizer until that person had proved it by acting, for instance by bringing senior decision-makers to a follow-on meeting. That is the shift in management attention this paper argues for. HBR's own caution applies too: scorecards turn bureaucratic quickly, and they work as conversation guides, not checklists.</p>
+<p><strong>Incumbency is where the gap shows most.</strong> Much of an IT services firm's revenue comes from renewals, rebids and expansion. The incumbent starts ahead, but often manages the rebid as an administrative event while a challenger works the sourcing adviser and reframes the scope. Losing a renewal is rarely a failure of selling; it is a failure to notice that the client had started a new decision.</p>
+<p><strong>Organisation-level discipline pays.</strong> In RAIN Group's survey of 472 sellers and executives, its elite performers won nearly three-quarters of their proposals; the bottom 80% won 40%. The data are self-reported and date from 2015, but the size of the gap, and RAIN's finding that it correlates with the maturity of sales process and management, point the same way.</p>
+<h2>How the best firms steer their major deals</h2>
+<p>The firms that win consistently treat a major deal as a client decision to be understood and influenced, and they manage it at that level. In practice that comes down to four habits.</p>
+<p><strong>They choose early which deals to shape.</strong> Before an RFP exists, they ask three questions in order: is the client ready to change, should we invest in shaping this, and can we win? HBR's star performers weighed a client's potential to change above its potential to buy. They favoured clients in flux (a new leader, an acquisition, regulatory change, widespread dissatisfaction with current practice) over clients with neatly defined needs, because that is where a decision can still be shaped. HBR even offered a scorecard for the purpose, with bands running from "consider not pursuing" to "consider pursuing with full resources". Getting ahead of the RFP is, in HBR's words, "more important than ever" but "no longer sufficient", and even when invited late its stars tried to rewind the decision to an earlier stage. Walking away early from the wrong deal is as valuable as winning the right one.</p>
+<p><strong>They review deals at a few decisive moments, not every week.</strong> Typically: before committing effort to shape a deal, at bid or no-bid, before the proposal and price go in, and after the decision, won or lost. Each review asks what the client has done and who on the client side is moving it, not only what the seller believes.</p>
+<p><strong>They staff the deal to match the client's decision.</strong> A named lead for each major deal, a bid manager and a solution architect, and a senior executive matched to the client's senior stakeholders. Where a hyperscaler or a sourcing adviser is involved, each is treated as a stakeholder in the decision, with someone on the deal team responsible for the relationship.</p>
+<p><strong>They keep the cost of pursuit in proportion.</strong> A major bid ties up senior people for months. Fewer, earlier, better-chosen pursuits raise the win rate and lower the cost of sale at the same time. Below a certain deal size the same logic applies to the funnel rather than to each deal.</p>
+<h2>Six questions for sales leaders</h2>
+<p>A leader can test their own organisation with six questions, answered for the ten largest open deals and the five largest renewals.</p>
+<div class="tablewrap"><table><thead><tr><th>Question</th><th>What good looks like</th><th>Warning sign</th></tr></thead><tbody><tr><td data-label="Question">Did we know about this deal before the client wrote its requirements?</td><td data-label="What good looks like">Most major deals were known and influenced early</td><td data-label="Warning sign">You first heard of it when the RFP arrived</td></tr><tr><td data-label="Question">Who on the client side is driving this decision, and what have they done this month?</td><td data-label="What good looks like">A named Mobilizer, with evidence of action: meetings convened, information shared</td><td data-label="Warning sign">A friendly contact who “will put in a good word”</td></tr><tr><td data-label="Question">Does our deal review record what the client has done, or only the stage we assigned?</td><td data-label="What good looks like">Client actions are the evidence for each stage</td><td data-label="Warning sign">Stage, value and close date only</td></tr><tr><td data-label="Question">How many deals did we decide not to pursue this year, and why?</td><td data-label="What good looks like">A deliberate number, with reasons recorded</td><td data-label="Warning sign">None: everything gets bid</td></tr><tr><td data-label="Question">For our top renewals, have we treated the client as starting a new decision?</td><td data-label="What good looks like">The rebid is run like a new major deal, well before notice periods</td><td data-label="Warning sign">The renewal is left to contract administration</td></tr><tr><td data-label="Question">Where a hyperscaler or sourcing adviser is involved, are they on our map?</td><td data-label="What good looks like">Mapped, with someone accountable for each</td><td data-label="Warning sign">Discovered at the shortlist stage</td></tr></tbody></table></div>
+<p>More than two warning signs suggest the constraint is not seller skill alone. It is how the organisation decides where and when to compete.</p>
+<p>The question for sales leaders is not only which methodology to train. It is whether they can see and steer the client's decision early enough to matter. The best deals are shaped before the competition knows there is a deal, and carried to a decision by someone inside the client.</p>
+<h2 class="sources">Sources</h2>
+<ul><li>Adamson, Dixon and Toman, <em>The End of Solution Sales</em>, Harvard Business Review, July–August 2012</li><li>Dixon and McKenna, <em>Stop Losing Sales to Customer Indecision</em>, Harvard Business Review, 2022; and <em>The JOLT Effect</em> (2022)</li><li>Gartner, <em>67% of B2B buyers prefer a rep-free experience</em>, press release, March 2026</li><li>Gartner, <em>61% of B2B buyers prefer a rep-free buying experience</em>, press release, June 2025</li><li>Gartner, <em>B2B buyers prefer ordering and paying through digital commerce</em>, press release, June 2022 (survey of 725 buyers, November–December 2021)</li><li>Forrester, <em>The State of Business Buying, 2026</em>, January 2026, findings reported by Digital Commerce 360</li><li>ISG, <em>Europe’s demand for tech services accelerates in Q2</em>, ISG Index, July 2026; and <em>Index Insider: 1H26 ISG Index recap</em></li><li>AWS, <em>Opening the AWS European Sovereign Cloud</em>, January 2026</li><li>AWS, <em>New MAP incentives to accelerate migration and modernization</em>, July 2024; and <em>AWS Marketplace reduces listing fee for professional services to 0.5%</em>, June 2026</li><li>EDPB and EDPS, <em>Initial legal assessment of the impact of the US CLOUD Act on the EU legal framework for the protection of personal data</em> (annex), July 2019. <a href="https://edps.europa.eu/sites/edp/files/publication/19-07-10_edpb_edps_cloudact_annex_en.pdf">edps.europa.eu</a></li><li>RAIN Group, <em>Average sales win rates: how do you compare?</em> and <em>The Top-Performing Sales Organization</em> benchmark report (survey fielded June–August 2015) and <em>What Sales Winners Do Differently</em></li><li>Dixon and Adamson, <em>The Challenger Sale</em>, Portfolio, 2011; Adamson, Dixon, Spenner and Toman, <em>The Challenger Customer</em>, Portfolio, 2015; Miller and Heiman, <em>Strategic Selling</em>, 1985; Rackham, <em>SPIN Selling</em>, McGraw-Hill, 1988</li></ul>
+<div class="download"><a href="SRG_Solution_Sales_Isnt_Dead.pdf">Download the PDF</a><span>Six pages · SanRemo Group white paper</span></div>
+</div>
+</article>
+</div>
+</main>
+
+<footer>
+<div class="wrap">
+<span>SanRemo Group — the independent practice of Jan Cleeren</span>
+<span>© 2026</span>
+</div>
+</footer>
+
+</body>
+</html>
