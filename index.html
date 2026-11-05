@@ -106,6 +106,34 @@ font-size:1.22rem;font-weight:600;letter-spacing:-.01em;
 .record dd{margin:0;max-width:var(--measure)}
 .record dd .where{display:block;font-size:.87rem;color:var(--ink-soft);margin-top:.2rem}
 
+/* ---------- selected missions ---------- */
+.row h4{
+font-family:"IBM Plex Serif",Georgia,serif;
+font-size:1.3rem;font-weight:500;line-height:1.25;letter-spacing:-.012em;
+margin:0;
+}
+.intro{max-width:var(--measure);color:var(--ink-soft);margin:.4rem 0 0}
+.lens{padding:2.5rem 0 .5rem;border-top:1px solid var(--rule-soft);margin-top:1.25rem}
+.intro + .lens{border-top:0;margin-top:.5rem}
+.lens h3{font-size:.8rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;margin:0 0 .3rem}
+.lens p{margin:0;color:var(--ink-soft);max-width:var(--measure);font-size:.95rem}
+.lens + .row{border-top:0}
+.formed .item{
+display:grid;grid-template-columns:15rem 1fr;gap:2.5rem;
+padding:1.35rem 0;border-top:1px solid var(--rule-soft);align-items:baseline;
+}
+.lens + .formed .item:first-child{border-top:0}
+.formed .fig{font-family:"IBM Plex Serif",Georgia,serif;font-size:1.22rem;font-weight:600;letter-spacing:-.01em}
+.formed .fig span{display:block;font-family:"IBM Plex Sans",system-ui,sans-serif;font-weight:400;font-size:.88rem;color:var(--ink-soft);letter-spacing:0;margin-top:.15rem}
+.formed p{margin:0;max-width:var(--measure)}
+.formed p strong{font-weight:600}
+.range{
+display:grid;grid-template-columns:repeat(auto-fit,minmax(13rem,1fr));gap:1.5rem 2rem;
+margin-top:2.75rem;padding:2rem 0 3.5rem;border-top:1px solid var(--rule);
+}
+.range div{font-size:.93rem;color:var(--ink-soft);line-height:1.45}
+.range b{display:block;font-family:"IBM Plex Serif",Georgia,serif;font-weight:500;font-size:1.3rem;color:var(--ink);letter-spacing:-.015em;margin-bottom:.2rem}
+
 /* ---------- about + contact ---------- */
 .about .row p{max-width:var(--measure)}
 .contact{padding-top:3rem;padding-bottom:4rem}
@@ -119,6 +147,7 @@ body{font-size:16px}
 .hero{padding-top:3.5rem;padding-bottom:2.75rem}
 .row,.record .item{grid-template-columns:1fr;gap:.9rem}
 .row{padding:1.85rem 0}
+.formed .item{grid-template-columns:1fr;gap:.4rem}
 .masthead .wrap{flex-direction:column;align-items:flex-start;gap:.6rem}
 }
 </style>
@@ -137,12 +166,24 @@ body{font-size:16px}
 <div class="wrap hero">
 <h1>Commercial leadership for B2B technology businesses.</h1>
 <p class="lead">SanRemo Group is the independent practice of Jan Cleeren. I work with technology companies, from growing SMBs to large enterprises, across IT services, cloud, data and AI, that need a commercial engine built, rebuilt or refocused.</p>
-<p>Twenty-five years in enterprise IT services, most of it in the Belgian market and the Gulf, in senior commercial roles at IBM, Hewlett-Packard and EDS. I work at board and executive level, to a defined brief, with a defined handover.</p>
+<p>I learned how nine-figure decisions get made inside EDS, HP and IBM. Since leaving the corporate world I have applied that mostly as an independent: turning round sales functions, steering major pursuits, opening new markets and building a company of my own. I work at board and executive level, to a defined brief, with a defined handover.</p>
 </div>
 
 <section>
 <div class="wrap">
 <div class="section-head"><h2>What I do</h2></div>
+
+<div class="row">
+<div>
+<h3>Sales governance and method</h3>
+<p class="meta">Three to six months</p>
+</div>
+<div>
+<p>Most companies do not lack sales activity; they lack a way to tell which of it matters. Deals get qualified on confidence, forecasts on hope, and governance is either absent or so heavy the team works around it.</p>
+<p>I assess how the company actually sells, then design and implement a sales governance framework fit for purpose: qualification standards, deal stages with evidence-based exits, an operating cadence and CRM discipline. It is sized to the sales motions in place: light where deals are standard, thorough only where they are not.</p>
+<p class="detail">The playbook, the CRM set-up and the reports are yours, and within ninety days the cadence runs by your own people.</p>
+</div>
+</div>
 
 <div class="row">
 <div>
@@ -152,31 +193,7 @@ body{font-size:16px}
 <div>
 <p>The portfolio and the sales motion have drifted apart: the team is selling the way it sold five years ago, into a market that has moved. Growth stalls and nobody can say precisely where.</p>
 <p>I assess the portfolio against market segment and sales motion, match it against what the team can actually do, and realign the organisation around where it can win.</p>
-<p class="detail">Assessment, target operating model, role definitions, KPIs, and the transition run with you rather than handed over as a report.</p>
-</div>
-</div>
-
-<div class="row">
-<div>
-<h3>Major-deal steering</h3>
-<p class="meta">Six to twelve months, or per pursuit</p>
-</div>
-<div>
-<p>Big deals are lost long before the bid. They are lost by qualifying in late, by shaping nothing, by discovering the price-to-win in the final week, and by governance that reviews slides instead of decisions.</p>
-<p>I install a steering framework that starts before the RFP: qualification gates, a scorecard that bites, decision-unit mapping, price-to-win, win strategy and a close plan — and I chair it until your own people can.</p>
-<p class="detail">Gate structure, scorecard, pursuit templates, two-layer governance, and the team trained to run it without me.</p>
-</div>
-</div>
-
-<div class="row">
-<div>
-<h3>Sales governance and method</h3>
-<p class="meta">Three to six months</p>
-</div>
-<div>
-<p>Most companies do not lack sales activity; they lack a way to tell which of it matters. Deals get qualified on confidence, forecasts on hope — and governance is either absent or so heavy the team works around it.</p>
-<p>I assess how the company actually sells, then design and implement a sales governance framework fit for purpose: qualification standards, deal stages with evidence-based exits, an operating cadence and CRM discipline — sized to the sales motions in place or still to be implemented, never process for its own sake.</p>
-<p class="detail">The method is documented as your intellectual property, and within ninety days the cadence runs by your own people.</p>
+<p class="detail">Assessment, target operating model, role definitions (including the split between winning new clients and growing existing ones), KPIs, and the transition run with you rather than handed over as a report.</p>
 </div>
 </div>
 
@@ -187,38 +204,146 @@ body{font-size:16px}
 </div>
 <div>
 <p>The growth plan says one thing. The sales engine underneath it may say another. Before an acquisition or an investment, someone has to test whether the commercial machine can deliver the number in the model.</p>
-<p>An operator's challenge of the plan: sales-engine maturity, pipeline quality, portfolio maturity, organisation and leadership, delivery against ambition — and what a stronger owner could unlock.</p>
-<p class="detail">For corporate development, transaction services teams and investors in IT services and software.</p>
+<p>An operator's challenge of the plan: sales-engine maturity, pipeline quality, portfolio maturity, organisation and leadership, delivery against ambition, and what a stronger owner could unlock.</p>
+<p class="detail">For corporate development, transaction services teams, investors in IT services and software, and groups that acquire firms one after another.</p>
+</div>
+</div>
+
+<div class="row">
+<div>
+<h3>Market entry and go-to-market</h3>
+<p class="meta">Three to six months</p>
+</div>
+<div>
+<p>A firm has an offer that works at home and a market it has never sold into. A wrong first move costs a year and the references the next attempt depends on.</p>
+<p>I assess the candidate markets, segment the buyers by how they actually buy, and test the findings with primary research at executive level. Then I design the route in: direct, partner-led or phased.</p>
+<p class="detail">Market assessment, buyer segmentation, partner model (if applicable), and a costed phased entry plan with a revenue model.</p>
+</div>
+</div>
+
+<div class="row">
+<div>
+<h3>Major-deal steering</h3>
+<p class="meta">Six to twelve months, or per pursuit</p>
+</div>
+<div>
+<p>Big deals are lost long before the bid. They are lost by qualifying in late, by shaping nothing, by discovering the price-to-win in the final week, and by governance that reviews slides instead of decisions.</p>
+<p>I install a steering framework that starts before the RFP: qualification gates, a scorecard that bites, decision-unit mapping, price-to-win, win strategy and a close plan, and I chair it until your own people can.</p>
+<p class="detail">Gate structure, scorecard, pursuit templates, two-layer governance, and the team trained to run it without me.</p>
 </div>
 </div>
 </div>
 </section>
 
-<section class="record">
+<section id="missions">
 <div class="wrap">
-<div class="section-head"><h2>What this is built on</h2></div>
-<dl>
+<div class="section-head"><h2>Selected missions</h2></div>
+<p class="intro">I am glad to talk through any of these in detail.</p>
+
+<div class="lens">
+<h3>Founder-led, little process yet</h3>
+<p>Firms where selling depends on a few people and the method is still in their heads.</p>
+</div>
+
+<div class="row">
+<div>
+<h4>From reseller to platform</h4>
+<p class="meta">Software firm, 50 people</p>
+</div>
+<div>
+<p>While the firm moved from ERP reseller to its own platform, I managed the sales team, split it into new-business and account-management roles and produced a two-market expansion study.</p>
+</div>
+</div>
+
+<div class="row">
+<div>
+<h4>Selling first, then building the team</h4>
+<p class="meta">Nearshore engineering firm I founded</p>
+</div>
+<div>
+<p>I won the first clients myself, with no channel and no agency, then built the sales organisation. Six clients by 2024, three of them expanding beyond the first scope, and a team of up to 20, partners and contractors included, across five countries.</p>
+</div>
+</div>
+
+<div class="lens">
+<h3>A method that outlasts the mandate</h3>
+<p>Governance a team keeps running after I leave.</p>
+</div>
+
+<div class="row">
+<div>
+<h4>An empty funnel, explained</h4>
+<p class="meta">IT services group, several thousand people</p>
+</div>
+<div>
+<p>A solution-sales function had produced little pipeline in nine months. I found a different root cause in each of its three solution areas and realigned the function with management's backing. I designed the 2026 KPI and quota model, which was approved and implemented, and a major-deal governance framework for adoption across the group.</p>
+</div>
+</div>
+
+<div class="row">
+<div>
+<h4>Governance on a live bid</h4>
+<p class="meta">Regional government tender, €115M over seven years</p>
+</div>
+<div>
+<p>I joined after shortlisting, when the tender could no longer be shaped, and installed the pursuit governance: win strategy, a close plan and a biweekly executive dashboard. I priced the bid below the incumbent and competition.</p>
+</div>
+</div>
+
+<div class="lens">
+<h3>Where the method was formed</h3>
+<p>Large pursuits at EDS, HP and IBM between 2005 and 2019, where I learned what a decision at this scale needs.</p>
+</div>
+
+<div class="formed">
 <div class="item">
-<dt>$600M</dt>
-<dd>Global cloud transformation programme, converted from a three-year extension into a seven-year partnership.<span class="where">Hewlett-Packard</span></dd>
+<div class="fig">$600M+<span>2011</span></div>
+<p><strong>Global cloud transformation programme.</strong> Converted from a three-year extension into a seven-year partnership.</p>
 </div>
 <div class="item">
-<dt>$500M</dt>
-<dd>Government outsourcing renewal won against Atos and IBM, directing a pursuit team of more than fifty.<span class="where">Hewlett-Packard</span></dd>
+<div class="fig">$500M+<span>2013</span></div>
+<p><strong>Government outsourcing renewal.</strong> A competitive rebid with a pursuit team of more than fifty across architecture, finance, legal and delivery, and won against Atos and IBM.</p>
 </div>
 <div class="item">
-<dt>$150M</dt>
-<dd>Digital infrastructure and cloud programmes across the UAE, Qatar, Saudi Arabia and South Africa.<span class="where">IBM Middle East &amp; Africa</span></dd>
+<div class="fig">$120M+<span>2005–09</span></div>
+<p><strong>Government and defence sector.</strong> Built from nothing in three years, contracts ranging from 500K to 70M including an HR and payroll contract across thirteen ministries.</p>
 </div>
 <div class="item">
-<dt>$120M</dt>
-<dd>A government and defence sector built from nothing in three years, including a payroll and HR contract across thirteen ministries.<span class="where">EDS Belgium</span></dd>
+<div class="fig">$150M+<span>2017–19</span></div>
+<p><strong>Digital infrastructure and cloud programmes.</strong> I led business development and pursuit shaping across the UAE, Qatar, Saudi Arabia and South Africa.</p>
 </div>
-<div class="item">
-<dt>€100M</dt>
-<dd>Major-deal steering for an IT services engagement, across sales, solution, finance and delivery.<span class="where">Econocom</span></dd>
 </div>
-</dl>
+
+<div class="lens">
+<h3>Opening new markets</h3>
+<p>Entry strategies and first contracts.</p>
+</div>
+
+<div class="row">
+<div>
+<h4>A first global-enterprise contract</h4>
+<p class="meta">Telecom operator, 200–500 people</p>
+</div>
+<div>
+<p>I opened a new enterprise segment in the Gulf for an operator whose base was mid-market, and landed its first contract with a global enterprise client: mission-critical connectivity across a dozen Middle East countries, modest in volume, a first reference in a new market.</p>
+</div>
+</div>
+
+<div class="row">
+<div>
+<h4>Choosing how to enter</h4>
+<p class="meta">Executive-education institute</p>
+</div>
+<div>
+<p>Nine months at CEO level. I assessed the candidate regions, segmented the market by how each group buys, ran primary research with Gulf state-owned energy, nuclear and aviation organisations, and designed a partner-led, phased entry plan.</p>
+</div>
+</div>
+
+<div class="range">
+<div><b>8 pursuits qualified, 8 signed</b>2006–14, from a few $100K to $600M+</div>
+<div><b>Under 50 to global</b>the range of organisations I have worked inside</div>
+<div><b>$1B+</b>closed in outsourcing, cloud and business applications</div>
+</div>
 </div>
 </section>
 
@@ -245,7 +370,7 @@ body{font-size:16px}
 <div><h3>A brief, not a retainer</h3></div>
 <div>
 <p>Every mandate starts with what has to be true at the end of it, and ends with a handover — a framework your people run, a team that knows its job, a decision made. I am not building a consultancy and I do not sell projects that extend themselves.</p>
-<p>I work in Dutch, French, English and German, from Belgium and the UAE, and I am comfortable saying early that a brief is not a fit.</p>
+<p>I work in Dutch, French, English and German, from Belgium and the UAE.</p>
 </div>
 </div>
 </div>
