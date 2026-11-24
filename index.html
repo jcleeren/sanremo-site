@@ -142,7 +142,39 @@ margin-top:2.75rem;padding:2rem 0 3.5rem;border-top:1px solid var(--rule);
 footer{border-top:1px solid var(--rule);font-size:.85rem;color:var(--ink-soft)}
 footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding-top:1.4rem;padding-bottom:1.4rem}
 
+/* ---------- publications ---------- */
+.pubs{background:var(--band)}
+.pubs .wrap{padding-bottom:1.5rem}
+.pub{display:grid;grid-template-columns:1fr 24rem;gap:3.5rem;align-items:center;padding:2.75rem 0;border-top:1px solid var(--rule)}
+.pubs .section-head + .pub{border-top:0;padding-top:2rem}
+.pub h3{font-family:"IBM Plex Serif",Georgia,serif;font-size:1.75rem;font-weight:500;line-height:1.2;letter-spacing:-.015em;margin:0 0 .55rem;max-width:22ch}
+.pub h3 a{border:0}
+.pub .meta{font-size:.9rem;color:var(--ink-soft);margin:0 0 1.1rem}
+.pub-text p{max-width:var(--measure);margin:0 0 1.4rem}
+.pub .btn{display:inline-block;background:var(--ink);color:#fff;border:0;padding:.7rem 1.15rem;border-radius:3px;font-weight:600;font-size:.95rem}
+.pub .btn:hover{background:var(--accent);color:#fff}
+.sheet{display:block;background:#fff;border:1px solid var(--rule);box-shadow:7px 7px 0 var(--rule-soft);padding:1.5rem 1.6rem 1.6rem;color:var(--ink)}
+.sheet:hover{border-color:var(--ink-soft);color:var(--ink)}
+.sheet-cap{font-size:.85rem;color:var(--ink-soft);margin:0 0 1.1rem}
+.ledger{margin:0}
+.ledger div{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding:.6rem 0;border-top:1px solid var(--rule-soft)}
+.ledger div:first-child{border-top:0;padding-top:0}
+.ledger dt{font-size:.93rem;color:var(--ink-soft)}
+.ledger dd{margin:0;font-family:"IBM Plex Serif",Georgia,serif;font-size:1.2rem;font-weight:500;white-space:nowrap}
+.ledger .total{border-top:2px solid var(--ink);margin-top:.35rem;padding-top:.8rem;padding-bottom:0}
+.ledger .total dt{color:var(--ink);font-weight:600}
+.ledger .total dd{color:var(--accent);font-weight:600;font-size:1.4rem}
+.questions{margin:0;padding:0;list-style:none;counter-reset:q}
+.questions li{counter-increment:q;display:grid;grid-template-columns:1.5rem 1fr;font-size:.95rem;line-height:1.4;padding:.5rem 0;border-top:1px solid var(--rule-soft);color:var(--ink-soft)}
+.questions li:first-child{border-top:0;padding-top:0}
+.questions li::before{content:counter(q);font-family:"IBM Plex Serif",Georgia,serif}
+.questions .now{color:var(--ink);font-weight:600;border-top:2px solid var(--ink);margin-top:.35rem;padding-top:.75rem;padding-bottom:0}
+.questions .now::before{color:var(--accent)}
+
 @media (max-width:46rem){
+.pub{grid-template-columns:1fr;gap:1.75rem;padding:2.25rem 0}
+.pub h3{font-size:1.5rem}
+.sheet{box-shadow:5px 5px 0 var(--rule-soft)}
 body{font-size:16px}
 .hero{padding-top:3.5rem;padding-bottom:2.75rem}
 .row,.record .item{grid-template-columns:1fr;gap:.9rem}
@@ -346,29 +378,46 @@ body{font-size:16px}
 </div>
 </section>
 
-<section id="insights">
+<section id="insights" class="pubs">
 <div class="wrap">
 <div class="section-head"><h2>Publications</h2></div>
-<div class="row">
-<div>
+
+<article class="pub">
+<div class="pub-text">
 <h3><a href="/insights/who-pays-when-the-ai-saving-does-not-arrive/">Who Pays When the AI Saving Does Not Arrive?</a></h3>
 <p class="meta">AI and the Commercial Model · White paper · November 2026</p>
-</div>
-<div>
 <p>IT services providers are signing for AI savings they do not control. The paper shows what that does to price, margin and contract, with a worked example and five questions for a management team.</p>
-<p class="detail"><a href="/insights/who-pays-when-the-ai-saving-does-not-arrive/">Read the summary and get the paper</a></p>
+<a class="btn" href="/insights/who-pays-when-the-ai-saving-does-not-arrive/">Read the summary and get the paper</a>
 </div>
-</div>
-<div class="row">
-<div>
+<a class="sheet" href="/insights/who-pays-when-the-ai-saving-does-not-arrive/" aria-label="From the paper: if everything goes to plan">
+<p class="sheet-cap">From the paper: if everything goes to plan</p>
+<dl class="ledger">
+<div><dt>Cost to deliver</dt><dd>€142,000 lower</dd></div>
+<div><dt>Price to the client</dt><dd>€219,000 lower</dd></div>
+<div class="total"><dt>What the provider earns</dt><dd>€77,000 lower</dd></div>
+</dl>
+</a>
+</article>
+
+<article class="pub">
+<div class="pub-text">
 <h3><a href="/insights/solution-sales-isnt-dead/">Solution Sales Isn’t Dead. It’s Just Not Enough.</a></h3>
 <p class="meta">The Evolution of Selling · White paper · November 2026</p>
-</div>
-<div>
 <p>Fifty years of method have each added a question the seller must be able to answer. In B2B technology today, the binding constraint is no longer seller skill but whether leaders can see and steer the client’s decision while it is still being formed.</p>
-<p class="detail"><a href="/insights/solution-sales-isnt-dead/">Read the summary and get the paper</a></p>
+<a class="btn" href="/insights/solution-sales-isnt-dead/">Read the summary and get the paper</a>
 </div>
-</div>
+<a class="sheet" href="/insights/solution-sales-isnt-dead/" aria-label="From the paper: fifty years in five questions">
+<p class="sheet-cap">From the paper: fifty years in five questions</p>
+<ol class="questions">
+<li>What does the product do?</li>
+<li>What problem does it solve for this client?</li>
+<li>What is it worth to this client’s business?</li>
+<li>What should this client be thinking about?</li>
+<li class="now">How will this client decide, and who must agree?</li>
+</ol>
+</a>
+</article>
+
 </div>
 </section>
 
