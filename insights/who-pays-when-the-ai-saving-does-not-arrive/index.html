@@ -9,7 +9,7 @@
 <meta property="og:description" content="IT services providers are signing for AI savings they do not control. A SanRemo Group white paper by Jan Cleeren.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://sanremo-group.com/insights/who-pays-when-the-ai-saving-does-not-arrive/">
-<meta property="og:image" content="https://sanremo-group.com/insights/who-pays-when-the-ai-saving-does-not-arrive/three-figures.png">
+<meta property="og:image" content="https://sanremo-group.com/insights/who-pays-when-the-ai-saving-does-not-arrive/before-after.png">
 <link rel="canonical" href="https://sanremo-group.com/insights/who-pays-when-the-ai-saving-does-not-arrive/">
 <link rel="icon" type="image/png" href="/assets/favicon.png">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
@@ -78,6 +78,10 @@ th{font-weight:600;background:var(--band);border-top:0}
 td:first-child{font-weight:600;width:42%}
 table.figures td:not(:first-child),table.figures th:not(:first-child){text-align:right;white-space:nowrap}
 .note{font-size:1.02rem;max-width:38rem}
+table.ba td:first-child{width:34%}
+table.ba th:nth-child(n+2),table.ba td:nth-child(n+2){white-space:nowrap}
+table.ba tr.sum td{border-top:2px solid var(--ink);font-weight:600}
+table.ba tr.sum td:last-child{color:var(--accent)}
 .figs{display:grid;grid-template-columns:repeat(3,1fr);gap:1.75rem;margin:1.5rem 0 1.6rem;max-width:46rem}
 .figs div{border-top:2px solid var(--ink);padding-top:.75rem}
 .figs span{display:block;font-size:.9rem;font-weight:600;color:var(--ink-soft);margin-bottom:.25rem}
@@ -105,6 +109,9 @@ form.dl button[disabled]{opacity:.6;cursor:wait}
 .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
 
 @media (max-width:46rem){
+table.ba tr.sum td{border-top:0}
+table.ba tr.sum{border-top:2px solid var(--ink)}
+table.ba th:nth-child(n+2),table.ba td:nth-child(n+2){white-space:normal}
 .article-head{padding-top:3rem;padding-bottom:2rem}
 .gate .wrap{grid-template-columns:1fr;gap:1.75rem}
 form.dl .two{grid-template-columns:1fr}
@@ -152,13 +159,18 @@ body{font-size:16px}
 <section class="part">
 <div class="wrap">
 <h2>Even when the plan works, the provider earns less</h2>
-<div class="body"><p>The paper works through one contract: a managed service for three years, a team of twelve, a margin of 35%, and a provider that uses AI and passes the saving on in a price 5% lower. If everything goes exactly to plan:</p></div>
-<div class="figs">
-<div><span>Cost to deliver</span><strong>€142,000 lower</strong></div>
-<div><span>Price to the client</span><strong>€219,000 lower</strong></div>
-<div><span>What the provider earns</span><strong>€77,000 lower</strong></div>
+<div class="body"><p>The paper works through one contract: a managed service for three years with a team of twelve. The provider uses AI, needs fewer people, and passes the saving on to the client at the same margin of 35%. If everything goes exactly to plan:</p></div>
+<div class="tablewrap">
+<table class="ba">
+<thead><tr><th>Three years</th><th>Before AI</th><th>With AI</th><th>Difference</th></tr></thead>
+<tbody>
+<tr><td data-label="Three years">Cost to deliver</td><td data-label="Before AI">€2.70 million</td><td data-label="With AI">€2.56 million</td><td data-label="Difference">−€142,000</td></tr>
+<tr><td data-label="Three years">Price to the client</td><td data-label="Before AI">€4.15 million</td><td data-label="With AI">€3.93 million</td><td data-label="Difference">−€219,000</td></tr>
+<tr class="sum"><td data-label="Three years">What the provider earns</td><td data-label="Before AI">€1.45 million</td><td data-label="With AI">€1.38 million</td><td data-label="Difference">−€77,000</td></tr>
+</tbody>
+</table>
 </div>
-<div class="body"><p>The client receives the whole saving and more, and the provider carries the risk. If the price of AI rises, or the productivity gain stays where it is today, the margin falls from 35% to as low as 25%.</p>
+<div class="body"><p>The provider keeps its 35%, but 35% of a lower price is less money. So the client pays €219,000 less, of which only €142,000 was saved. The other €77,000 comes out of what the provider earns, and the provider is the one who carries the risk. If the price of AI rises, or the productivity gain stays where it is today, the margin falls from 35% to as low as 25%.</p>
 <p>The example makes one point only: a provider needs an agreed way to share the gain with its client before it gives the price reduction. The paper names three ways to do that, and shows the full calculation with four outcomes.</p></div>
 </div>
 </section>
