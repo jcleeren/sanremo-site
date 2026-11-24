@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Who Pays When the AI Saving Does Not Arrive? — SanRemo Group</title>
+<meta name="description" content="A SanRemo Group white paper by Jan Cleeren on who keeps the gain, and who carries the risk, when AI makes IT services cheaper.">
+<meta name="author" content="Jan Cleeren">
+<meta property="og:title" content="Who Pays When the AI Saving Does Not Arrive?">
+<meta property="og:description" content="IT services providers are signing for AI savings they do not control. A SanRemo Group white paper by Jan Cleeren.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://sanremo-group.com/insights/who-pays-when-the-ai-saving-does-not-arrive/">
+<meta property="og:image" content="https://sanremo-group.com/insights/who-pays-when-the-ai-saving-does-not-arrive/three-figures.png">
+<link rel="canonical" href="https://sanremo-group.com/insights/who-pays-when-the-ai-saving-does-not-arrive/">
+<link rel="icon" type="image/png" href="/assets/favicon.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;450;600&amp;family=IBM+Plex+Serif:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+:root{
+--ink:#14202b;
+--ink-soft:#55646f;
+--rule:#d5dde3;
+--rule-soft:#e7ecef;
+--paper:#ffffff;
+--band:#f2f5f7;
+--accent:#b3122d;
+--measure:34rem;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+margin:0;
+background:var(--paper);
+color:var(--ink);
+font-family:"IBM Plex Sans",system-ui,sans-serif;
+font-size:17px;
+line-height:1.62;
+font-weight:400;
+-webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:60rem;margin:0 auto;padding:0 1.75rem}
+a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--rule)}
+a:hover{border-bottom-color:var(--accent);color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+
+/* ---------- masthead ---------- */
+.masthead{border-bottom:1px solid var(--rule)}
+.masthead .wrap{
+display:flex;align-items:center;justify-content:space-between;
+gap:1.5rem;padding-top:1.6rem;padding-bottom:1.3rem;
+}
+.mark{font-family:"IBM Plex Serif",Georgia,serif;font-weight:600;font-size:1.45rem;letter-spacing:-.015em;border:0}
+.mark img{display:block;height:3.1rem;width:auto}
+.masthead nav{font-size:.93rem;color:var(--ink-soft);display:flex;gap:1.4rem;flex-wrap:wrap}
+.masthead nav a{border:0;color:var(--ink-soft)}
+
+footer{border-top:1px solid var(--rule);font-size:.85rem;color:var(--ink-soft)}
+footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding-top:1.4rem;padding-bottom:1.4rem}
+
+/* ---------- paper page ---------- */
+.article-head{padding-top:4.5rem;padding-bottom:2.75rem}
+.kicker{font-size:.95rem;font-weight:600;letter-spacing:.01em;color:var(--accent);margin:0 0 1rem}
+.article-head h1{font-family:"IBM Plex Serif",Georgia,serif;font-weight:500;font-size:clamp(2.15rem,5.2vw,3.2rem);line-height:1.14;letter-spacing:-.022em;margin:0 0 1.2rem;max-width:20ch}
+.article-head .dek{font-size:1.2rem;color:var(--ink);max-width:var(--measure);margin:0 0 1.4rem}
+.byline{font-size:.9rem;color:var(--ink-soft);margin:0 0 1.8rem}
+.jump{display:inline-block;background:var(--ink);color:#fff;border:0;padding:.7rem 1.15rem;border-radius:3px;font-weight:600;font-size:.95rem}
+.jump:hover{background:var(--accent);color:#fff}
+.part{border-top:1px solid var(--rule);padding:2.75rem 0 3rem}
+.part h2{font-family:"IBM Plex Serif",Georgia,serif;font-size:1.6rem;font-weight:500;line-height:1.25;letter-spacing:-.012em;margin:0 0 1.1rem}
+.part .body{max-width:38rem}
+.part p{margin:0 0 1.05rem}
+.part .label{font-size:.95rem;font-weight:600;color:var(--accent);margin:0 0 .8rem;letter-spacing:.01em}
+.tablewrap{margin:1.4rem 0 1.4rem;max-width:46rem}
+table{border-collapse:collapse;width:100%;font-size:.93rem;line-height:1.45}
+th,td{text-align:left;vertical-align:top;padding:.75rem .85rem;border-top:1px solid var(--rule)}
+th{font-weight:600;background:var(--band);border-top:0}
+td:first-child{font-weight:600;width:42%}
+table.figures td:not(:first-child),table.figures th:not(:first-child){text-align:right;white-space:nowrap}
+.note{font-size:1.02rem;max-width:38rem}
+.figs{display:grid;grid-template-columns:repeat(3,1fr);gap:1.75rem;margin:1.5rem 0 1.6rem;max-width:46rem}
+.figs div{border-top:2px solid var(--ink);padding-top:.75rem}
+.figs span{display:block;font-size:.9rem;font-weight:600;color:var(--ink-soft);margin-bottom:.25rem}
+.figs strong{display:block;font-family:"IBM Plex Serif",Georgia,serif;font-weight:500;font-size:1.65rem;line-height:1.2;letter-spacing:-.012em}
+
+/* ---------- download gate ---------- */
+.gate{background:var(--band);border-top:1px solid var(--rule)}
+.gate .wrap{display:grid;grid-template-columns:1fr 1fr;gap:3rem;padding-top:3.25rem;padding-bottom:3.5rem}
+.gate h2{font-family:"IBM Plex Serif",Georgia,serif;font-size:1.6rem;font-weight:500;line-height:1.25;margin:0 0 1rem}
+.gate ul{margin:0 0 1rem;padding-left:1.1rem}
+.gate li{margin:0 0 .45rem}
+.gate .small{font-size:.86rem;color:var(--ink-soft)}
+form.dl{display:grid;gap:.9rem;align-content:start}
+form.dl .two{display:grid;grid-template-columns:1fr 1fr;gap:.9rem}
+form.dl label{display:grid;gap:.3rem;font-size:.88rem;font-weight:600}
+form.dl input[type=text],form.dl input[type=email]{font:inherit;font-weight:400;font-size:1rem;padding:.65rem .75rem;border:1px solid #b9c4cc;border-radius:3px;background:#fff;color:var(--ink);width:100%}
+form.dl input:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:transparent}
+form.dl button{justify-self:start;font:inherit;font-weight:600;font-size:1rem;background:var(--ink);color:#fff;border:0;padding:.75rem 1.3rem;border-radius:3px;cursor:pointer}
+form.dl button:hover{background:var(--accent)}
+form.dl button[disabled]{opacity:.6;cursor:wait}
+.err{color:var(--accent);font-size:.9rem;margin:0;min-height:1.2em}
+.done{display:none}
+.done.show{display:block}
+.done a.jump{margin:.4rem 0 1rem}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+
+@media (max-width:46rem){
+.article-head{padding-top:3rem;padding-bottom:2rem}
+.gate .wrap{grid-template-columns:1fr;gap:1.75rem}
+form.dl .two{grid-template-columns:1fr}
+.figs{grid-template-columns:1fr;gap:1.1rem}
+thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+table,tbody,tr,td{display:block}
+tr{border-top:1px solid var(--rule);padding:.6rem 0}
+td{border:0;padding:.3rem 0;width:auto!important}
+table.figures td:not(:first-child){text-align:left}
+td::before{content:attr(data-label);display:block;font-size:.78rem;font-weight:600;color:var(--ink-soft);letter-spacing:.02em}
+body{font-size:16px}
+.masthead .wrap{flex-direction:column;align-items:flex-start;gap:.6rem}
+}
+</style>
+</head>
+<body>
+
+<header class="masthead">
+<div class="wrap">
+<a class="mark" href="/"><img src="/assets/srg-logo.png" alt="SanRemo Group" width="596" height="235"></a>
+<nav><a href="/#what-i-do">What I do</a><a href="/#missions">Credentials</a><a href="/#insights">Publications</a><a href="/#contact">Get in touch</a></nav>
+</div>
+</header>
+
+<main>
+<div class="wrap article-head">
+<p class="kicker">White paper · AI and the Commercial Model</p>
+<h1>Who Pays When the AI Saving Does Not Arrive?</h1>
+<p class="dek">IT services providers are signing for AI savings they do not control.</p>
+<p class="byline">Jan Cleeren · November 2026 · 13 pages</p>
+<a class="jump" href="#get">Get the full paper</a>
+</div>
+
+<section class="part">
+<div class="wrap"><div class="body">
+<p class="label">Executive summary</p>
+<p>AI works. Nearly nine in ten organisations use it, yet only 37% report any effect on profit. Much of what is written about AI tries to explain that gap. This paper asks a different question, the one that matters most to companies that sell IT services and software: when AI makes the work cheaper, who keeps the gain, and who carries the risk if the gain does not materialise?</p>
+<p>The client takes the gain, and takes it early. In the contracts being signed today, providers commit to AI savings before they have achieved them. In a survey of large companies, buyers expected services delivered with AI to cost 19% less on average, while senior technology leaders put the cost reduction achieved in software development so far at 8%. ISG, which tracks these contracts, wrote in July 2026 that “neither providers nor enterprises have full visibility into how the savings will be achieved”. The difference is a risk, and it sits with the provider.</p>
+<p>The practice itself is not new. In the large outsourcing contracts I worked on, a price that fell every year was standard commercial practice. The risk was manageable as long as providers knew the baseline and controlled the source of the saving.</p>
+<p>What is new is that the provider no longer controls that source. In application services the saving depends on an AI tool whose cost rises with use, bought from suppliers who guarantee no result and can change their prices. Part of the saving also depends on changes that only the client can make in its own organisation. In infrastructure services, hardware, which became cheaper every year, has become more expensive and can no longer be priced ahead.</p>
+<p>None of this is a reason to refuse such contracts. In my view the providers that learn to price this risk, and to state in the contract who carries it, will win work from those that do not.</p>
+</div></div>
+</section>
+
+<section class="part">
+<div class="wrap">
+<h2>Even when the plan works, the provider earns less</h2>
+<div class="body"><p>The paper works through one contract: a managed service for three years, a team of twelve, a margin of 35%, and a provider that uses AI and passes the saving on in a price 5% lower. If everything goes exactly to plan:</p></div>
+<div class="figs">
+<div><span>Cost to deliver</span><strong>€142,000 lower</strong></div>
+<div><span>Price to the client</span><strong>€219,000 lower</strong></div>
+<div><span>What the provider earns</span><strong>€77,000 lower</strong></div>
+</div>
+<div class="body"><p>The client receives the whole saving and more, and the provider carries the risk. If the price of AI rises, or the productivity gain stays where it is today, the margin falls from 35% to as low as 25%.</p>
+<p>The example makes one point only: a provider needs an agreed way to share the gain with its client before it gives the price reduction. The paper names three ways to do that, and shows the full calculation with four outcomes.</p></div>
+</div>
+</section>
+
+<section class="part">
+<div class="wrap">
+<h2>Five questions before an AI saving goes into a price</h2>
+<div class="body"><p>Answer them for your largest contracts and for the bids you have open today.</p></div>
+<div class="tablewrap"><table><thead><tr><th>Question</th><th>A good answer</th><th>Warning sign</th></tr></thead><tbody>
+<tr><td data-label="Question">Which of our contracts already contain an AI saving that we have not yet achieved?</td><td data-label="A good answer">A list, with the amount per contract and the date by which it must be achieved</td><td data-label="Warning sign">Nobody has such a list</td></tr>
+<tr><td data-label="Question">Who approved that figure before the client saw it?</td><td data-label="A good answer">Finance and delivery, in a documented review</td><td data-label="Warning sign">The saving was added to reach the winning price, and nobody in delivery has signed for it</td></tr>
+<tr><td data-label="Question">What is the baseline, and how will the result be tested?</td><td data-label="A good answer">A measurement of today’s cost and quality, and written acceptance criteria, both agreed with the client</td><td data-label="Warning sign">The gain is measured by asking users for their impression</td></tr>
+<tr><td data-label="Question">What does the AI cost us on this contract, and who is responsible for that cost?</td><td data-label="A good answer">The cost is tracked every month against a spending limit, and one person is responsible for it</td><td data-label="Warning sign">Nobody can say what the AI cost on this contract last month</td></tr>
+<tr><td data-label="Question">What happens when the price of AI, the price of hardware or the rules of a software vendor change?</td><td data-label="A good answer">The contract states the assumptions behind the price, and how and when the price is reviewed</td><td data-label="Warning sign">The price was built on today’s costs, and the contract is silent on what happens if they change</td></tr>
+</tbody></table></div>
+<p class="note">Each warning sign marks a place where a firm carries AI risk without being paid for it.</p>
+</div>
+</section>
+
+<section class="gate" id="get">
+<div class="wrap">
+<div>
+<h2>Read the full paper</h2>
+<p>Thirteen pages, with sources. Beyond this summary, it covers:</p>
+<ul>
+<li>Why signing for savings in advance is not new, the three conditions under which that risk was manageable, and why part of the saving now depends on changes that only the client can make</li>
+<li>Infrastructure: contracted price reductions that have doubled while hardware and licences become more expensive, and what that does to forward costing</li>
+<li>Applications: what AI does to a provider’s margin on a three-year managed service, why low-code comes first and legacy last, and what changes when users no longer need the screens of their business applications</li>
+<li>Why a European cloud provider cannot rely on a premium for control alone, and where AI matters most for it</li>
+<li>What a provider can commit to, and why no AI supplier stands behind that commitment</li>
+<li>An appendix that compares what seven sources found on AI results, and what each figure measures</li>
+</ul>
+</div>
+<div>
+<form class="dl" id="dl" novalidate="">
+<div class="two">
+<label>First name<input type="text" name="firstname" autocomplete="given-name" required=""></label>
+<label>Last name<input type="text" name="lastname" autocomplete="family-name" required=""></label>
+</div>
+<label>Work email<input type="email" name="email" autocomplete="email" required=""></label>
+<label class="hp" aria-hidden="true">Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+<button type="submit">Get the paper</button>
+<p class="err" id="err" role="alert"></p>
+<p class="small">I use your name and email to send you this paper and may follow up about it. See the <a href="/privacy/">privacy notice</a>.</p>
+</form>
+<div class="done" id="done" role="status">
+<h2>Thank you</h2>
+<p>Your download should start automatically. If it doesn’t:</p>
+<a class="jump" href="SRG_Who_Pays_When_the_AI_Saving_Does_Not_Arrive.pdf">Download the PDF</a>
+<p class="small">Questions or a different view? I’d like to hear it. Use the contact details on the <a href="/#contact">home page</a>.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap">
+<span>SanRemo Group — the independent practice of Jan Cleeren</span>
+<span><a href="/privacy/">Privacy</a> · © 2026</span>
+</div>
+</footer>
+<script>
+(function(){
+  // FORM is the form of paper 1, reused on purpose: each submission records the page it came from (pageUri, pageName).
+  var PORTAL="149693705", FORM="18c31323-4682-4268-8e78-e3a14bc21650", PDF="SRG_Who_Pays_When_the_AI_Saving_Does_Not_Arrive.pdf", KEY="srg-paper-who-pays-when-the-ai-saving-does-not-arrive";
+  var form=document.getElementById("dl"), done=document.getElementById("done"), err=document.getElementById("err");
+  function reveal(){ form.style.display="none"; done.classList.add("show"); }
+  try { if (localStorage.getItem(KEY)==="1") reveal(); } catch(e) {}
+  form.addEventListener("submit", function(ev){
+    ev.preventDefault(); err.textContent="";
+    if (form.website.value) return;              // spam trap
+    if (!form.checkValidity()) { form.reportValidity(); return; }
+    var btn=form.querySelector("button"); btn.disabled=true; btn.textContent="Sending…";
+    var fields=[
+      {name:"firstname", value:form.firstname.value.trim()},
+      {name:"lastname",  value:form.lastname.value.trim()},
+      {name:"email",     value:form.email.value.trim()}
+    ];
+    var body={fields:fields, context:{pageUri:location.href, pageName:document.title}};
+    fetch("https://api-eu1.hsforms.com/submissions/v3/integration/submit/"+PORTAL+"/"+FORM,
+      {method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify(body)})
+    .then(function(r){ if(!r.ok) return r.text().then(function(t){ throw new Error(t); }); })
+    .then(function(){ try{ localStorage.setItem(KEY,"1"); }catch(e){} reveal(); window.location.href=PDF; })
+    .catch(function(){ btn.disabled=false; btn.textContent="Get the paper";
+      err.textContent="Something went wrong. Please try again, or use the contact details on the home page and I will send it.";
+    });
+  });
+})();
+</script>
+
+</body></html>
