@@ -70,6 +70,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;
 .part h2{font-family:"IBM Plex Serif",Georgia,serif;font-size:1.6rem;font-weight:500;line-height:1.25;letter-spacing:-.012em;margin:0 0 1.1rem}
 .part .body{max-width:38rem}
 .part p{margin:0 0 1.05rem}
+.part p:not(.label),.part li{text-align:justify;-webkit-hyphens:auto;hyphens:auto}
 .part .label{font-size:.95rem;font-weight:600;color:var(--accent);margin:0 0 .8rem;letter-spacing:.01em}
 .tablewrap{margin:1.4rem 0 1.4rem;max-width:46rem}
 table{border-collapse:collapse;width:100%;font-size:.93rem;line-height:1.45}
@@ -109,6 +110,7 @@ form.dl button[disabled]{opacity:.6;cursor:wait}
 .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
 
 @media (max-width:46rem){
+.part p:not(.label),.part li{text-align:left;-webkit-hyphens:manual;hyphens:manual}
 table.ba{font-size:.8rem;line-height:1.35}
 table.ba th,table.ba td{padding:.55rem .3rem}
 table.ba td:first-child{width:30%}
