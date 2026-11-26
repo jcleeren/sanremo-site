@@ -109,19 +109,20 @@ form.dl button[disabled]{opacity:.6;cursor:wait}
 .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
 
 @media (max-width:46rem){
-table.ba tr.sum td{border-top:0}
-table.ba tr.sum{border-top:2px solid var(--ink)}
-table.ba th:nth-child(n+2),table.ba td:nth-child(n+2){white-space:normal}
+table.ba{font-size:.8rem;line-height:1.35}
+table.ba th,table.ba td{padding:.55rem .3rem}
+table.ba td:first-child{width:30%}
+table.ba th:nth-child(n+2),table.ba td:nth-child(n+2){white-space:nowrap}
 .article-head{padding-top:3rem;padding-bottom:2rem}
 .gate .wrap{grid-template-columns:1fr;gap:1.75rem}
 form.dl .two{grid-template-columns:1fr}
 .figs{grid-template-columns:1fr;gap:1.1rem}
-thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
-table,tbody,tr,td{display:block}
-tr{border-top:1px solid var(--rule);padding:.6rem 0}
-td{border:0;padding:.3rem 0;width:auto!important}
-table.figures td:not(:first-child){text-align:left}
-td::before{content:attr(data-label);display:block;font-size:.78rem;font-weight:600;color:var(--ink-soft);letter-spacing:.02em}
+table:not(.ba) thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+table:not(.ba),table:not(.ba) tbody,table:not(.ba) tr,table:not(.ba) td{display:block}
+table:not(.ba) tr{border-top:1px solid var(--rule);padding:.6rem 0}
+table:not(.ba) td{border:0;padding:.3rem 0;width:auto!important}
+table.figures:not(.ba) td:not(:first-child){text-align:left}
+table:not(.ba) td::before{content:attr(data-label);display:block;font-size:.78rem;font-weight:600;color:var(--ink-soft);letter-spacing:.02em}
 body{font-size:16px}
 .masthead .wrap{flex-direction:column;align-items:flex-start;gap:.6rem}
 }
