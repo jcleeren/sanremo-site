@@ -157,6 +157,8 @@ form.dl button{justify-self:start;font:inherit;font-weight:600;font-size:1rem;ba
 form.dl button:hover{background:var(--accent)}
 form.dl button[disabled]{opacity:.6;cursor:wait}
 .err{color:var(--accent);font-size:.9rem;margin:0;min-height:1.2em}
+.getbox{align-self:start}
+.getbox .jump{margin:0 0 .8rem}
 .done{display:none}
 .done.show{display:block}
 .done a.jump{margin:.4rem 0 1rem}
@@ -195,7 +197,7 @@ body{font-size:16px}
 <h1>Solution Sales Isn’t Dead. It’s Just Not Enough.</h1>
 <p class="dek">Seller skill no longer wins major deals on its own.</p>
 <p class="byline">Jan Cleeren · November 2026 · 6 pages</p>
-<a class="jump" href="#get">Get the full paper</a>
+<a class="jump" href="Solution%20Sales%20Isnt%20Dead.pdf">Download the full paper (PDF)</a>
 </div>
 
 <section class="part">
@@ -236,24 +238,10 @@ body{font-size:16px}
 <li>Four habits of firms that steer their major deals well</li>
 </ul>
 </div>
-<div>
-<form class="dl" id="dl" novalidate>
-<div class="two">
-<label>First name<input type="text" name="firstname" autocomplete="given-name" required></label>
-<label>Last name<input type="text" name="lastname" autocomplete="family-name" required></label>
-</div>
-<label>Work email<input type="email" name="email" autocomplete="email" required></label>
-<label class="hp" aria-hidden="true">Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
-<button type="submit">Get the paper</button>
-<p class="err" id="err" role="alert"></p>
-<p class="small">I use your name and email to send you this paper and may follow up about it. See the <a href="/privacy/">privacy notice</a>.</p>
-</form>
-<div class="done" id="done" role="status">
-<h2>Thank you</h2>
-<p>Your download should start automatically. If it doesn’t:</p>
-<a class="jump" href="Solution%20Sales%20Isnt%20Dead.pdf">Download the PDF</a>
+<div class="getbox">
+<a class="jump" href="Solution%20Sales%20Isnt%20Dead.pdf">Download the full paper (PDF)</a>
+<p class="small">6 pages. No registration needed.</p>
 <p class="small">Questions or a different view? I’d like to hear it: <a href="mailto:jan.cleeren@sanremo-group.com">jan.cleeren@sanremo-group.com</a></p>
-</div>
 </div>
 </div>
 </section>
@@ -265,31 +253,6 @@ body{font-size:16px}
 <span><a href="/privacy/">Privacy</a> · © 2026</span>
 </div>
 </footer>
-<script>
-(function(){
-  var PORTAL="149693705", FORM="18c31323-4682-4268-8e78-e3a14bc21650", PDF="Solution%20Sales%20Isnt%20Dead.pdf", KEY="srg-paper-solution-sales-isnt-dead";
-  var form=document.getElementById("dl"), done=document.getElementById("done"), err=document.getElementById("err");
-  function reveal(){ form.style.display="none"; done.classList.add("show"); }
-  try { if (localStorage.getItem(KEY)==="1") reveal(); } catch(e) {}
-  form.addEventListener("submit", function(ev){
-    ev.preventDefault(); err.textContent="";
-    if (form.website.value) return;              // spam trap
-    if (!form.checkValidity()) { form.reportValidity(); return; }
-    var btn=form.querySelector("button"); btn.disabled=true; btn.textContent="Sending…";
-    var fields=[
-      {name:"firstname", value:form.firstname.value.trim()},
-      {name:"lastname",  value:form.lastname.value.trim()},
-      {name:"email",     value:form.email.value.trim()}
-    ];
-    var body={fields:fields, context:{pageUri:location.href, pageName:document.title}};
-    fetch("https://api-eu1.hsforms.com/submissions/v3/integration/submit/"+PORTAL+"/"+FORM,
-      {method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify(body)})
-    .then(function(r){ if(!r.ok) return r.text().then(function(t){ throw new Error(t); }); })
-    .then(function(){ try{ localStorage.setItem(KEY,"1"); }catch(e){} reveal(); window.location.href=PDF; })
-    .catch(function(){ btn.disabled=false; btn.textContent="Get the paper";
-      err.textContent="Something went wrong. Please try again, or email jan.cleeren@sanremo-group.com and I will send it."; });
-  });
-})();
-</script>
+
 </body>
 </html>
